@@ -35,26 +35,26 @@
         $input['id'] = $this->db->lastInsertId();
         return $this->response->withJson($input);
     });
-/*
-    // DELETE a user with given id
-    $app->delete('/users/[{id}]', function ($request, $response, $args) {
-        $sth = $this->db->prepare("DELETE FROM user WHERE id=:id");
+
+    // DELETE a contact with given id
+    $app->delete('/contacts/[{id}]', function ($request, $response, $args) {
+        $sth = $this->db->prepare("DELETE FROM contact WHERE id=:id");
         $sth->bindParam("id", $args['id']);
         $sth->execute();
         $todos = $sth->fetchAll();
         return $this->response->withJson($todos);
     });
 
-    // Update user with given id           FUNZIONA
-    $app->put('/users/[{id}]', function ($request, $response, $args) {
+    // Update contact with given id           FUNZIONA
+    $app->put('/contacts/[{id}]', function ($request, $response, $args) {
         $input = $request->getParsedBody();
-        $sql = "UPDATE user SET name=:name,surname=:surname WHERE id=:id";
+        $sql = "UPDATE contact SET telnumber=:telnumber,name=:name,id_group=:id_group WHERE id=:id";
         $sth = $this->db->prepare($sql);
         $sth->bindParam("id", $args['id']);
+        $sth->bindParam("telnumber", $input['telnumber']);
         $sth->bindParam("name", $input['name']);
-        $sth->bindParam("surname", $input['surname']);
+        $sth->bindParam("id_group", $input['id_group']);
         $sth->execute();
         $input['id'] = $args['id'];
         return $this->response->withJson($input);
     });
-    */
