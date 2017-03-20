@@ -16,7 +16,7 @@ return [
             "host" => "localhost",
             "dbname" => "progettoreti",
             "user" => "root",
-            "pass" => "danimon93"
+            "pass" => "admin"
         ],
     ],
 ];
