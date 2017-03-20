@@ -24,11 +24,11 @@ require __DIR__ . '/../src/dependencies.php';
 require __DIR__ . '/../src/middleware.php';
 
 // Register routes
-require __DIR__ . '/../src/routes.php';
+//require __DIR__ . '/../src/routes.php';
 
-//require __DIR__ . '/../src/users.php';
+require __DIR__ . '/../src/users.php';
 
-//require __DIR__ . '/../src/contacts.php';
+require __DIR__ . '/../src/contacts.php';
 
 //require __DIR__ . '/../src/profiles.php';     sono i contatti nella rubrica
 
