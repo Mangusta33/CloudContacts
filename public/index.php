@@ -30,7 +30,7 @@ require __DIR__ . '/../src/users.php';
 
 require __DIR__ . '/../src/contacts.php';
 
-//require __DIR__ . '/../src/profiles.php';     sono i contatti nella rubrica
+require __DIR__ . '/../src/groups.php';
 
 // Run app
 $app->run();
